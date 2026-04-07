@@ -21,7 +21,7 @@ test.beforeEach(async ({ page }) => {
   await page.reload();
 });
  
-test('Assert manager can add new customer', async ({ page }) => {
+test('Assert manager can open account for existing customer', async ({ page }) => {
   const bankManagerMainPage = new BankManagerMainPage(page);
   const openAccountPage = new OpenAccountPage(page);
   const customersListPage = new CustomersListPage(page);
