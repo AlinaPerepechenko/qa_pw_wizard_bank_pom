@@ -16,7 +16,7 @@ test('Assert the deposit can be opened', async ({ page }) => {
   7. Assert 'Deposit Successful' message is visible
   8. Assert Balance
   9. Click [Transactions]
-  10. Assert Deposit transaction
+  10. Assert Deposit transaction.
   */
 
   const customerLoginPage = new CustomerLoginPage(page);
