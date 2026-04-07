@@ -8,7 +8,7 @@ test('Assert the empty transactions list has correct values', async ({
 }) => {
   /* 
   Test:
-  1. Open Wizard bank login for Customer 
+  1. Open Wizard bank login for Customer.
   2. Select "Albus Dumbledore"
   3. Click [Login]
   4. Click [Transactions]

@@ -6,7 +6,7 @@ import { CustomerAccountPage } from '../../../src/pages/customer/CustomerAccount
 test('Assert correct customer Logout', async ({ page }) => {
   /* 
   Test:
-  1. Open Wizard bank link
+  1. Open Wizard bank link.
   2. Click [Customer Login]
   3. Select Neville Longbottom
   4. Click [Login]

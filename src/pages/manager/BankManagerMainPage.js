@@ -4,6 +4,7 @@ export class BankManagerMainPage {
   constructor(page) {
     this.page = page;
     this.addCustomerButton = page.getByRole('button', { name: 'Add Customer' }).first();
+
     this.openAccountButton = page.getByRole('button', { name: 'Open Account' });
     this.customersButton = page.getByRole('button', { name: 'Customers' });
   }
@@ -35,4 +36,8 @@ export class BankManagerMainPage {
   async assertCustomersButtonIsVisible() {
     await expect(this.customersButton).toBeVisible();
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a79f229 (Implement all manager and customer tests)

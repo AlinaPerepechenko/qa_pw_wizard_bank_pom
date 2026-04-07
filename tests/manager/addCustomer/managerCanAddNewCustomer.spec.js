@@ -1,6 +1,7 @@
 import { test } from '@playwright/test';
 import { faker } from '@faker-js/faker';
 import { AddCustomerPage } from '../../../src/pages/manager/AddCustomerPage';
+import { BankManagerMainPage } from '../../../src/pages/manager/BankManagerMainPage';
 import { CustomersListPage } from '../../../src/pages/manager/CustomersListPage';
 
 test('Assert manager can add new customer', async ({ page }) => {
@@ -8,8 +9,7 @@ test('Assert manager can add new customer', async ({ page }) => {
   Test:
   1. Open add customer page by link
     https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager/addCust
-  2. Fill the First Name.  
-  3. Fill the Last Name.
+  2. Fill the First Name.
   4. Fill the Postal Code.
   5. Click [Add Customer].
   6. Reload the page (This is a simplified step to close the popup)
@@ -28,8 +28,15 @@ test('Assert manager can add new customer', async ({ page }) => {
   2. Do not rely on the customer row id for the steps 8-11. 
     Use the ".last()" locator to get the last row.
   */
+<<<<<<< HEAD
   const addCustomerPage = new AddCustomerPage(page);
   const customersListPage = new CustomersListPage(page);
+=======
+
+  const addCustomerPage = new AddCustomerPage(page);
+  const customersListPage = new CustomersListPage(page);
+  const bankManagerMainPage = new BankManagerMainPage(page);
+>>>>>>> a79f229 (Implement all manager and customer tests)
  
   const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();
@@ -39,10 +46,16 @@ test('Assert manager can add new customer', async ({ page }) => {
   await addCustomerPage.addCustomer(firstName, lastName, postalCode);
   await page.reload();
  
+<<<<<<< HEAD
   await customersListPage.open();
+=======
+  await bankManagerMainPage.open();
+  await bankManagerMainPage.clickCustomersButton();
+>>>>>>> a79f229 (Implement all manager and customer tests)
  
   await customersListPage.assertLastRowContainsFirstName(firstName);
   await customersListPage.assertLastRowContainsLastName(lastName);
   await customersListPage.assertLastRowContainsPostalCode(postalCode);
   await customersListPage.assertLastRowAccountNumberIsEmpty();
 });
+ 

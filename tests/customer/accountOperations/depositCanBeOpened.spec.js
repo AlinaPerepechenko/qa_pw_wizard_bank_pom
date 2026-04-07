@@ -10,7 +10,7 @@ test('Assert the deposit can be opened', async ({ page }) => {
   1. Open Wizard bank login for Customer
   2. Select "Harry Potter"
   3. Click [Login]
-  4. Click [Deposit]
+  4. Click [Deposit].
   5. Fill deposit value
   6. Click [Deposit]
   7. Assert 'Deposit Successful' message is visible

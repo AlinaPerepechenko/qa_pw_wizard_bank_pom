@@ -6,7 +6,8 @@ export class AddCustomerPage {
     this.firstNameInput = page.getByPlaceholder('First Name');
     this.lastNameInput = page.getByPlaceholder('Last Name');
     this.postalCodeInput = page.getByPlaceholder('Post Code');
-    this.addCustomerButton = page.getByRole('form').getByRole('button', { name: 'Add Customer' });
+
+    this.addCustomerButton = page.locator('form').getByRole('button', { name: 'Add Customer' }).first();
   }
  
   async open() {

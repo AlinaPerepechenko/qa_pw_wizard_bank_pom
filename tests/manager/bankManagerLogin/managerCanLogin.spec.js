@@ -22,3 +22,4 @@ test('Assert manager can Login', async ({ page }) => {
   await bankManagerMainPage.assertOpenAccountButtonIsVisible();
   await bankManagerMainPage.assertCustomersButtonIsVisible();
 });
+ 

@@ -5,7 +5,7 @@ import { CustomerAccountPage } from '../../../src/pages/customer/CustomerAccount
 test('Assert customer has correct bank data', async ({ page }) => {
   /* 
   Test:
-  1. Open Wizard bank link
+  1. Open Wizard bank link.
   2. Select Hermione Granger
   3. Click [Login]
   4. Assert Account Number in Dropdown next to the Hermoine Granger name

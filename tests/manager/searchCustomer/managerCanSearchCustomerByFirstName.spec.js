@@ -42,3 +42,4 @@ test('Assert manager can search customer by First Name', async ({ page }) => {
   await customersListPage.assertCustomerRowIsVisible(firstName, lastName);
   await customersListPage.assertOnlyOneRowIsVisible();
 });
+

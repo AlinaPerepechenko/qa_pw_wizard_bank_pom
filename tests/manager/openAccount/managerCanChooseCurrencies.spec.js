@@ -27,3 +27,4 @@ test('Assert manager can choose currencies for account', async ({ page }) => {
   await openAccountPage.selectCurrency('Rupee');
   await openAccountPage.assertCurrencyDropdownHasValue('Rupee');
 });
+ 

@@ -29,4 +29,3 @@ export class OpenAccountPage {
   async assertCurrencyDropdownHasValue(value) {
     await expect(this.currencyDropdown).toHaveValue(value);
   }
-}
