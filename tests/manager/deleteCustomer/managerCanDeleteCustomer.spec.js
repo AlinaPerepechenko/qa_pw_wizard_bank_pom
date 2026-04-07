@@ -26,7 +26,6 @@ test.beforeEach(async ({ page }) => {
   4. Fill the Postal Code.
   5. Click [Add Customer].
   */
-});
 
 test('Assert manager can delete customer', async ({ page }) => {
   /* 
@@ -37,6 +36,7 @@ test('Assert manager can delete customer', async ({ page }) => {
   4. Reload the page.
   5. Assert customer row is not present in the table. 
   */
+ 
 
   const customersListPage = new CustomersListPage(page);
  
