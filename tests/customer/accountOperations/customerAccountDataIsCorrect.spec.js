@@ -10,8 +10,8 @@ test('Assert customer has correct bank data', async ({ page }) => {
   3. Click [Login]
   4. Assert Account Number in Dropdown next to the Hermoine Granger name
   5. Assert Account Number text
-  5. Assert Balance text
-  6. Assert Currency text
+  5. Assert Balance text.
+  6. Assert Currency text.
   */
 
   const loginPage = new CustomerLoginPage(page);
