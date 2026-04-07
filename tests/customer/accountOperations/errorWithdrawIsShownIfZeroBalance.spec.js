@@ -8,7 +8,7 @@ test('Assert the customer cannot withdraw money with empty balance', async ({
 }) => {
   /* 
   Test:
-  1. Open Wizard bank login for Customer
+  1. Open Wizard bank login for Customer.
   2. Select "Ron Weasly"
   3. Click [Login]
   4. Assert the "Balance : 0" text is present
